@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://towerrush.vercel.app/promo.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tower Rush — Промокод и бонусы</title>
+
+  <!-- favicon (иконка сайта) -->
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/26vmv7zs/image-2025-10-01-16-13-18.png">
+
+  <link href="sv/css2" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent1:#ffcc00;
+      --accent2:#ff8800;
+      --bg:#0d0f14;
+      --card:#161a21;
+      --text:#f1f1f1;
+      --muted:#9da5b4;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:"Inter",system-ui,-apple-system,Segoe UI, Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:20px;
+      line-height:1.6;
+    }
+
+    .wrap{max-width:1200px;margin:0 auto}
+
+    h1{
+      font-family:"Montserrat",sans-serif;
+      font-size:7.5vw;
+      text-align:center;
+      margin:8px 0 22px;
+      color:var(--accent1);
+      text-shadow:0 0 8px rgba(255,204,0,0.14);
+    }
+
+    /* HERO (image + right column) */
+    .hero{
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+      align-items:center;
+      margin-bottom:22px;
+    }
+
+    .hero-image{
+      width:100%;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 8px 26px rgba(0,0,0,0.6);
+      flex-shrink:0;
+    }
+    .hero-image img{
+      display:block;
+      width:100%;
+      height:auto;
+      object-fit:cover;
+    }
+
+    .hero-right{
+      width:100%;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    /* Card style (used for text and bonuses) */
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.03);
+      color:var(--text);
+      border-radius:12px;
+      padding:18px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.6);
+    }
+
+    .lead{
+      font-size:1rem;
+      color:var(--muted);
+      margin:0;
+    }
+
+    /* Heading in card with gradient text + small accent bar */
+    .card h2{
+      margin:0 0 10px 0;
+      font-family:"Montserrat",sans-serif;
+      font-size:20px;
+      line-height:1.1;
+      /* gradient text */
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      font-weight:800;
+      display:inline-block;
+    }
+    .accent-bar{
+      margin-top:10px;
+      height:6px;
+      width:120px;
+      border-radius:6px;
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      box-shadow:0 6px 18px rgba(255,136,0,0.06);
+    }
+
+    ul.bonus-list{padding-left:18px;margin:8px 0 0;color:var(--muted)}
+    ul.bonus-list li{margin-bottom:8px;font-size:15px}
+
+    .promo-code{
+      display:inline-block;
+      background:#0b0c0e;
+      border:2px solid rgba(255,204,0,0.16);
+      color:var(--accent1);
+      padding:10px 18px;
+      border-radius:10px;
+      font-weight:800;
+      font-family:"Montserrat",sans-serif;
+      font-size:16px;
+      letter-spacing:1px;
+    }
+
+    /* Buttons group */
+    .buttons{
+      display:flex;
+      gap:12px;
+      flex-direction:column;
+      align-items:center;
+      margin-top:14px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      color:#000;
+      border:none;
+      padding:12px 22px;
+      border-radius:999px;
+      font-weight:800;
+      text-decoration:none;
+      cursor:pointer;
+      font-size:15px;
+      box-shadow:0 8px 18px rgba(255,170,0,0.12);
+      transition:transform .14s ease, box-shadow .14s ease;
+      min-width:220px;
+    }
+    .btn:hover{ transform:translateY(-4px); box-shadow:0 14px 30px rgba(255,150,0,0.16); }
+
+    .notice{ color:#90ee90; font-weight:700; display:none; margin-top:8px; }
+
+    /* layout for desktop: image left, right column with text+card stacked */
+    @media(min-width:880px){
+      h1{ font-size:44px; margin-bottom:18px }
+      .hero{ flex-direction:row; align-items:flex-start; gap:16px }
+      .hero-image{ width:42% }
+      .hero-right{ width:58% }
+      .hero-right .card:first-child{ order:0 } /* description card first */
+      .buttons{ flex-direction:row; justify-content:flex-start; align-items:center; gap:12px }
+      .buttons .btn{ min-width:160px }
+    }
+
+    /* small screens */
+    @media(max-width:420px){
+      .btn{ min-width:180px; font-size:14px }
+      .promo-code{ font-size:14px; padding:8px 14px }
+      .card h2{ font-size:18px }
+      ul.bonus-list li{ font-size:14px }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Промокод Tower Rush</h1>
+
+    <section class="hero" aria-labelledby="promo-title">
+      <div class="hero-image" aria-hidden="false">
+        <img src="sv/ADBLOCK-16.jpg" alt="Tower Rush — бонусы и промокод" loading="lazy">
+      </div>
+
+      <div class="hero-right">
+        <!-- DESCRIPTION CARD -->
+        <div class="card" role="region" aria-label="Описание бонусов">
+          <h2 id="promo-title">Стартовый пакет для новых игроков</h2>
+          <div class="accent-bar" aria-hidden="true"></div>
+          <p class="lead">Используй промокод и получи щедрые приветственные бонусы. Всё это ждёт новых игроков — стартуй с преимуществом и наслаждайся игрой.</p>
+        </div>
+
+        <!-- BONUSES + ACTIONS CARD -->
+        <div class="card" role="region" aria-label="Бонусы и промокод">
+          <h2>Что даёт промокод?</h2>
+          <div class="accent-bar" aria-hidden="true"></div>
+
+          <ul class="bonus-list" aria-hidden="false">
+            <li><strong>+500%</strong> бонус на первые 4 пополнения</li>
+            <li><strong>30%</strong> cashback каждую неделю</li>
+            <li><strong>+70</strong> фриспинов</li>
+          </ul>
+
+          <div style="text-align:center;margin-top:14px;">
+            <span class="promo-code" id="promo">ADBLOCK</span>
+          </div>
+
+          <div class="buttons" role="group" aria-label="Действия с промокодом">
+            <button class="btn" id="copyBtn" aria-describedby="copyHint">📋 Скопировать промокод</button>
+            <a class="btn" id="activateBtn" href="https://1woxno.life/casino/list?open=register&amp;sub1=tg" target="_blank" rel="noopener noreferrer">🚀 Активировать промокод</a>
+            <a class="btn" href="https://towerrush.vercel.app/index.html">⬅ Вернуться в меню</a>
+          </div>
+
+          <div id="copyHint" class="notice" role="status" aria-live="polite">Промокод скопирован!</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script async="" src="sv/tag.js"></script><script>
+    // copy promo
+    (function(){
+      const copyBtn = document.getElementById('copyBtn');
+      const promoEl = document.getElementById('promo');
+      const hint = document.getElementById('copyHint');
+
+      async function doCopy(){
+        const code = promoEl.textContent.trim();
+        try{
+          if(navigator.clipboard && navigator.clipboard.writeText){
+            await navigator.clipboard.writeText(code);
+          } else {
+            const ta = document.createElement('textarea');
+            ta.value = code;
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            ta.remove();
+          }
+          hint.style.display = 'block';
+          setTimeout(()=> hint.style.display = 'none', 2000);
+
+          // analytics event if present
+          if (typeof gtag === 'function') {
+            gtag('event','copy_promo',{event_category:'engagement', event_label: code});
+          }
+        }catch(e){
+          alert('Не удалось скопировать автоматически. Скопируйте вручную: ' + code);
+        }
+      }
+
+      copyBtn.addEventListener('click', doCopy);
+      promoEl.addEventListener('click', doCopy);
+    })();
+  </script>
+
+  
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105090773', 'ym');
+
+    ym(105090773, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/105090773" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+
+
+
+
+</body></html>
